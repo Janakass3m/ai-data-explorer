@@ -130,7 +130,7 @@ if uploaded_file is not None:
                 st.session_state.corr_explanation = None
 
             if st.button("Explain Top Correlation", key="explain_corr"):
-                api_key = os.getenv("OPENAI_API_KEY")
+                api_key = st.secrets.get("OPENAI_API_KEY", os.getenv("OPENAI_API_KEY"))
 
                 if not api_key:
                     st.error("OpenAI API key not found.")
