@@ -64,9 +64,10 @@ Using the OpenAI API, the app generates:
 
 Users can ask questions about the dataset such as:
 
-- "Which variables are most correlated with cholesterol?"
-- "What patterns might exist between age and heart disease?"
-- "What variables might predict this outcome?"
+- "What are the most important variables in this dataset?"
+- "Are there any potential biases in this dataset?"
+- "Which variables might cause data quality issues?"
+- "What interesting research questions could this dataset answer?"
 
 The AI provides explanations or suggests analyses based on the dataset summary.
 
